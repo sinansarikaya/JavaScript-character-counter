@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Real Time Character Counter</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="errorBox">
+        <div class="errorMessage">!</div>
+      </div>
+
+      <main>
+        <div class="text">
+          <textarea
+            class="textarea"
+            placeholder="Please write your text here..."
+            maxlength="500"
+          ></textarea>
+          <div class="text-info">
+            <span>
+              Characters:
+              <span class="total-counter">0</span>
+            </span>
+            <span>
+              Words:
+              <span class="total-words">0</span>
+            </span>
+            <span>
+              Max Characters:
+              <span class="remaining-counter">500</span>
+            </span>
+          </div>
+        </div>
+        <div class="buttons">
+          <input type="button" value="Uppercase" class="upperBtn" />
+          <input type="button" value="Lowercase" class="lowerBtn" />
+          <input type="button" value="Reset" class="resetBtn" />
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
