@@ -26,7 +26,7 @@ lowerBtn.addEventListener("click", () => {
   if (textarea.value) {
     textarea.value = textarea.value.toLowerCase();
   } else {
-    error("There is no text");
+    error("You should write something!");
   }
 });
 resetBtn.addEventListener("click", () => {
