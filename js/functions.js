@@ -2,8 +2,8 @@ import { errorMessage } from "./app.js";
 
 export const error = (msg) => {
   errorMessage.innerHTML = msg;
-  errorMessage.style.bottom = "0";
+  errorMessage.style.left = "0";
   setTimeout(() => {
-    errorMessage.style.bottom = "-100px";
+    errorMessage.style.left = "-1000px";
   }, 2000);
 };
